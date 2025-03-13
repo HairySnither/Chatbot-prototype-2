@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCSE Engineering AQA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>GCSE Engineering AQA</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#topics">Topics</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to GCSE Engineering AQA</h2>
+            <p>Learn and explore the world of engineering with our comprehensive resources and interactive chatbot.</p>
+        </section>
+
+        <section id="topics">
+            <h2>Topics</h2>
+            <ul>
+                <li>Materials and their properties</li>
+                <li>Engineering processes</li>
+                <li>Systems and control</li>
+                <li>Design and technology</li>
+            </ul>
+        </section>
+
+        <section id="resources">
+            <h2>Resources</h2>
+            <p>Find useful resources and study materials to help you excel in your GCSE Engineering exams.</p>
+            <ul>
+                <li><a href="https://www.aqa.org.uk/subjects/engineering/gcse/engineering-8852">AQA Engineering Specification</a></li>
+                <li><a href="https://www.bbc.co.uk/bitesize/subjects/zs9d7ty">BBC Bitesize Engineering</a></li>
+                <li><a href="https://www.technologystudent.com/">Technology Student</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <div id="formResponse"></div>
+        </section>
+    </main>
+
+    <div id="chatbot">
+        <h3>Ask the Chatbot</h3>
+        <select id="questionDropdown">
+            <option value="">Select a question</option>
+            <option value="materials">What are the different types of materials?</option>
+            <option value="processes">What are common engineering processes?</option>
+            <option value="systems">Explain systems and control.</option>
+            <option value="design">What is design and technology?</option>
+        </select>
+        <button id="askButton">Ask</button>
+        <div id="response"></div>
+    </div>
+
+    <script src="sketch.js"></script>
+</body>
+</html>
